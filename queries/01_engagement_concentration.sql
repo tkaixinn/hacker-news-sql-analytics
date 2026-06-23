@@ -1,5 +1,6 @@
 -- This query checks how concentrated engagement is across stories:
 -- specifically, what share of total platform score the top 1% and 5% of stories capture.
+
 WITH new_t AS (
   SELECT 
     PERCENT_RANK() OVER (ORDER BY score DESC) AS percentile_rank, 

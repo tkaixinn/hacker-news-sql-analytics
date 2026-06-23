@@ -1,7 +1,6 @@
 -- This query examines whether posting frequency differs across active authors:
 -- specifically, whether authors who post more regularly tend to receive higher or lower average scores.
 
-
 WITH post_gaps AS (
   SELECT 
     `by`,
